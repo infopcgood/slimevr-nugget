@@ -3914,10 +3914,6 @@
 		(uuid "b400f8ca-315a-46a9-80e7-29f318341985")
 	)
 	(no_connect
-		(at 52.07 114.3)
-		(uuid "b6e2af7c-39de-4a26-9705-98eb8a9ef55f")
-	)
-	(no_connect
 		(at 52.07 124.46)
 		(uuid "b9107258-dec8-4038-8959-388240639d97")
 	)
@@ -4204,6 +4200,16 @@
 			(type default)
 		)
 		(uuid "610c1161-016c-48c2-9765-6fec9b920aee")
+	)
+	(wire
+		(pts
+			(xy 114.3 29.21) (xy 118.11 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62a5ff78-f022-490c-9b04-e3e71b0d13e8")
 	)
 	(wire
 		(pts
@@ -4862,6 +4868,30 @@
 		(uuid "052e3c89-d258-4978-8faf-f19e25780296")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 128.27 131.8162 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "BAT+"
+		(shape input)
+		(at 125.73 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "07326ba5-137d-48b8-b53a-9713ae370f9b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.6138 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5737,6 +5767,30 @@
 			)
 		)
 	)
+	(global_label "BSENSE"
+		(shape input)
+		(at 52.07 114.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c0f8d019-c601-4115-8ef2-96d16235c3f5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.7673 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "CHG"
 		(shape input)
 		(at 161.29 182.88 270)
@@ -5798,6 +5852,30 @@
 		(uuid "cb005f5a-9861-4266-96d6-1e871f375308")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 154.94 151.5147 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "BSENSE"
+		(shape input)
+		(at 115.57 29.21 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cc65577d-dce4-4b4a-9e3c-5733009cc094")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 115.57 39.5127 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8015,7 +8093,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "100k"
 			(at 226.06 99.568 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12823,6 +12901,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 121.92 29.21 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c03b14b0-dc94-4a5e-9c08-809b7695e9a3")
+		(property "Reference" "R16"
+			(at 121.92 23.622 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 121.92 26.162 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 121.92 30.988 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 121.92 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1101c89f-0d3c-42ad-8b53-1cfd802ada14")
+		)
+		(pin "1"
+			(uuid "feb21242-8209-48d0-b174-f0a1c039b995")
+		)
+		(instances
+			(project "slimevr-nugget"
+				(path "/2c10d244-e0d3-402b-9991-68aaf4b76bff"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 88.9 48.26 90)
 		(unit 1)
@@ -13220,6 +13377,85 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 106.68 29.21 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d364642f-4cc0-420c-b28f-6cd7646b03ee")
+		(property "Reference" "#PWR044"
+			(at 100.33 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 29.2099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 106.68 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "301a201e-d7df-44f1-a9ad-532d9d936b78")
+		)
+		(instances
+			(project "slimevr-nugget"
+				(path "/2c10d244-e0d3-402b-9991-68aaf4b76bff"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 214.63 154.94 0)
 		(mirror y)
 		(unit 1)
@@ -13449,6 +13685,85 @@
 			(project "slimevr-nugget"
 				(path "/2c10d244-e0d3-402b-9991-68aaf4b76bff"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 110.49 29.21 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e02dacc4-3647-425a-b300-1ce374d931d8")
+		(property "Reference" "R15"
+			(at 110.49 23.622 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 110.49 26.162 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 110.49 30.988 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 110.49 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d7f54b82-e527-4b0b-b31a-dd5262efac37")
+		)
+		(pin "1"
+			(uuid "ca9f527f-88f8-40ed-b176-c638ec38d8ad")
+		)
+		(instances
+			(project "slimevr-nugget"
+				(path "/2c10d244-e0d3-402b-9991-68aaf4b76bff"
+					(reference "R15")
 					(unit 1)
 				)
 			)
